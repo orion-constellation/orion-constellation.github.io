@@ -1,99 +1,92 @@
 site_name: Orion Defensive AI Documentation
 site_url: https://oriondefensiveai.com
-site_description: >
-  The Orion Constellation of Open Source Defensive AI
+site_description: 'The Orion Constellation of Open Source Defensive AI'
 repo_url: https://github.com/orion-constellation/
+repo_name: Orion Constellation
+edit_uri: 'blob/master/docs/'  # Corrected from 'edit_url' and adjusted the path
 
-nav:
-  - Home: index.md
-  - Modules:
-    - Orion Constellation: platform/orion-defensive-ai.md
-    - Orion Hunts: platform/orion-hunts.md
-    - Orion Agents: platform/orion-agents.md
-    - Cognitive Synthesis: platform/orion-cognitive-synthesis.md
-    - Orion Network: platform/orion-network.md
-    - Communications & Threat Platform: platform/orion-threat-platform.md
-  - User Guide:
-    - Getting Started: user-guide/getting-started.md
-    - Tutorials: user-guide/tutorials.md
-    - FAQ: user-guide/faq.md
-  - API:
-    - Overview: api/overview.md
-    - Reference: api/reference.md
-  - About:
-    - The Platform: about/platform.md
-    - Our Team: about/team.md
-    - Open Source: about/open-source.md
 theme:
   name: material
-  custom_dir: overrides
   logo: images/logo.png
   favicon: images/favicon.ico
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tabs
     - navigation.sections
+  palette:
+    scheme: default
+    primary: grey
+    accent: green
+  font:
+    text: Roboto
+    code: Roboto Mono
   footer:
     copyright: "Copyright © 2023 Orion Constellation Project"
     content: |
-      [![GitHub](https://img.shields.io/badge/GitHub-Orion_Constellation-blue?style=flat&logo=github)](https://github.com/yourusername/orion-constellation)
+      [![GitHub](https://img.shields.io/badge/GitHub-Orion_Constellation-blue?style=flat&logo=github)](https://github.com/orion-constellation)
       [![LinkedIn](https://img.shields.io/badge/LinkedIn-Orion_Constellation-blue?style=flat&logo=linkedin)](https://linkedin.com/in/orion-constellation)
       <br>Email: [orion@synavate.tech](mailto:orion@synavate.tech)
-  palette:
-    scheme: 'default'
-    primary: 'grey'
-    accent: 'green'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-  plugins:
-    - search
-    - minify:
-        minify_html: true
-    - autodocs
-    - git-revision-date-localized:
-        type: timeago
-  repo_url: https://github.com/orion-constellation/
-  repo_name:Orion-Constellation
-  edit_url: blob/master/docs
-    
-reveal:
-  path: reveal.js/dist
-  transition: slide
-  theme:
-    name: white.css
-    path: theme
-  plugin:
-    path: reveal.js/plugin 
 
-extra:
-  author:
-    name: snyata
+nav:
+  - Home: index.md
+  - Blog:
+      - Welcome to Our Blog: blog/2023-03-01-welcome.md
+      - March Update: blog/2023-03-15-update.md
+  - About: about.md
+  - Modules:
+      - Orion Constellation: platform/orion-defensive-ai.md
+      - Orion Hunts: platform/orion-hunts.md
+      - Orion Agents: platform/orion-agents.md
+      - Cognitive Synthesis: platform/orion-cognitive-synthesis.md
+      - Orion Network: platform/orion-network.md
+      - Communications & Threat Platform: platform/orion-threat-platform.md
+  - User Guide:
+      - Getting Started: user-guide/getting-started.md
+      - Tutorials: user-guide/tutorials.md
+      - FAQ: user-guide/faq.md
+  - API:
+      - Overview: api/overview.md
+      - Reference: api/reference.md
+  - About:
+      - The Platform: about/platform.md
+      - Our Team: about/the-team.md
+      - Open Source: about/open-source.md
 
-# Extensions
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - "import os"
+            - "import sys"
+          rendering:
+            show_source: true
+  - git-revision-date-localized:
+      type: timeago
+  
+
 markdown_extensions:
   - admonition
   - extra
   - meta
   - tables
-  - toc
+  - toc:
+      permalink: true
   - pymdownx.details
   - pymdownx.emoji
   - pymdownx.smartsymbols
   - pymdownx.tabbed
   - pymdownx.tasklist
-  - mknotebooks
-  - mkdocstrings:
-      watch:
-        - docs/*
-  - mermaid2
-  - admonition
   - codehilite:
       guess_lang: false
-  - toc:
-      permalink: true
+
 extra_css:
   - css/custom.css
   - assets/stylesheets/custom.css
+
 extra_javascript:
   - js/custom.js
