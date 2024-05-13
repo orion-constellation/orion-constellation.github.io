@@ -1,6 +1,4 @@
-Empty home for introducing your concepts.
+# Orion Constellation Documents
 
-# Home
 
-Under Construction
 

@@ -38,7 +38,6 @@ A collection of tools and utilities related to and beneficial to the Open Source
 ![Developed](https://img.shields.io/badge/Developed-No-green)
 
 
-
 Contact:
 orion@synavate.tech
 
