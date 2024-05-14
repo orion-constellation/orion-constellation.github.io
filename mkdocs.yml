@@ -29,16 +29,7 @@ theme:
       <br>Email: [orion@synavate.tech](mailto:orion@synavate.tech)
 
 nav:
-  - Home:
-      - Home: index.md
-      - Blog: blog/2023-03-01-welcome.md
-      - About: about.md
-      - Platform: about/platform.md
-      - User Guide: user-guide/getting-started.md
-      - About: about/team.md
-      - API: api/overview.md
-
-
+  - Home: index.md
   - Blog:
       - Welcome to Our Blog: blog/2023-03-01-welcome.md
       - March Update: blog/2023-03-15-update.md
