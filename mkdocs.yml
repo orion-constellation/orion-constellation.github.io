@@ -3,7 +3,7 @@ site_url: https://oriondefensiveai.com
 site_description: 'The Orion Constellation of Open Source Defensive AI'
 repo_url: https://github.com/orion-constellation/
 repo_name: Orion Constellation
-edit_uri: 'blob/main/docs/'  # Corrected from 'edit_url' and adjusted the path
+edit_uri: 'blob/main/docs/' 
 
 theme:
   name: material
