@@ -3,7 +3,7 @@ site_url: https://oriondefensiveai.com
 site_description: 'The Orion Constellation of Open Source Defensive AI'
 repo_url: https://github.com/orion-constellation/
 repo_name: Orion Constellation
-edit_uri: 'blob/master/docs/'  # Corrected from 'edit_url' and adjusted the path
+edit_uri: 'blob/main/docs/'  # Corrected from 'edit_url' and adjusted the path
 
 theme:
   name: material
@@ -26,10 +26,13 @@ theme:
     content: |
       [![GitHub](https://img.shields.io/badge/GitHub-Orion_Constellation-blue?style=flat&logo=github)](https://github.com/orion-constellation)
       [![LinkedIn](https://img.shields.io/badge/LinkedIn-Orion_Constellation-blue?style=flat&logo=linkedin)](https://linkedin.com/in/orion-constellation)
-      <br>Email: [orion@synavate.tech](mailto:orion@synavate.tech)
-
+      <br>Email: [core@oriondefensiveai.com](mailto:core@oriondefensiveai.com)
 nav:
   - Home: index.md
+  - Blog: blog/2023-03-01-welcome.md
+  - Platform: platform/orion-defensive-ai.md
+  - User Guide: user-guide/getting-started.md
+  - API: api/overview.md
   - Blog:
       - Welcome to Our Blog: blog/2023-03-01-welcome.md
       - March Update: blog/2023-03-15-update.md
