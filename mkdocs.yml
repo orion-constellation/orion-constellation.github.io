@@ -29,12 +29,21 @@ theme:
       <br>Email: [orion@synavate.tech](mailto:orion@synavate.tech)
 
 nav:
-  - Home: index.md
+  - Home:
+      - Home: index.md
+      - Blog: blog/2023-03-01-welcome.md
+      - About: about.md
+      - Platform: about/platform.md
+      - User Guide: user-guide/getting-started.md
+      - About: about/team.md
+      - API: api/overview.md
+
+
   - Blog:
       - Welcome to Our Blog: blog/2023-03-01-welcome.md
       - March Update: blog/2023-03-15-update.md
   - About: about.md
-  - Modules:
+  - Platform:
       - Orion Constellation: platform/orion-defensive-ai.md
       - Orion Hunts: platform/orion-hunts.md
       - Orion Agents: platform/orion-agents.md
